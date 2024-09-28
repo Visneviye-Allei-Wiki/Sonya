@@ -36,72 +36,42 @@
         
             <div class="content-wrapper">
                 <main class="main-info">
-                <h2>Основная информация</h2>
-                <p>Соня (ymn1chka_, настоящее имя Никита) - зашел на сервер 15 апреля 2023 года по приглашению от своих друзей. Тогда один из друзей Никиты попросил отправить скрин не на Дискордный Лололош, а на Вишневые Аллеи. Со временем он стал общаться в чате.</p>
-                
-                <h2>Чем занимался после захода</h2>
-                <p>После захода на сервер он стал много общаться, но в настоящее время он общается не так много.</p>
-                
-                <h2>Интересные факты</h2>
-                <ul>
-                    <li>Самый классный дотер на Вишневых Аллеях</li>
-                </ul>
-            </div>
-            <div class="infobox">
-                <h2>Соня</h2>
-                <img src="images/sonya.png" alt="Соня" class="avatar">
-                <table>
-                    <tr>
-                        <td>Имя</td>
-                        <td>Никита</td>
-                    </tr>
-                    <tr>
-                        <td>Должность</td>
-                        <td>Участник</td>
-                    </tr>
-                    <tr>
-                        <td>Дата захода на сервер</td>
-                        <td>15.04.2023</td>
-                    </tr>
-                    <tr>
-                        <td>Место рождения</td>
-                        <td>Неизвестно</td>
-                    </tr>
-                </table>
+                    <h2>Основная информация</h2>
+                    <p>Соня (ymn1chka_, настоящее имя Никита) - зашел на сервер 15 апреля 2023 года по приглашению от своих друзей. Тогда один из друзей Никиты попросил отправить скрин не на Дискордный Лололош, а на Вишневые Аллеи. Со временем он стал общаться в чате.</p>
+                    
+                    <h2>Чем занимался после захода</h2>
+                    <p>После захода на сервер он стал много общаться, но в настоящее время он общается не так много.</p>
+                    
+                    <h2>Интересные факты</h2>
+                    <ul>
+                        <li>Самый классный дотер на Вишневых Аллеях</li>
+                    </ul>
+                </main>
+                <aside class="infobox">
+                    <h2>Соня</h2>
+                    <img src="images/sonya.png" alt="Соня" class="avatar">
+                    <table>
+                        <tr>
+                            <td>Имя</td>
+                            <td>Никита</td>
+                        </tr>
+                        <tr>
+                            <td>Должность</td>
+                            <td>Участник</td>
+                        </tr>
+                        <tr>
+                            <td>Дата захода на сервер</td>
+                            <td>15.04.2023</td>
+                        </tr>
+                        <tr>
+                            <td>Место рождения</td>
+                            <td>Неизвестно</td>
+                        </tr>
+                    </table>
+                </aside>
             </div>
         </div>
     </div>
-        <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-
-        function setTheme(isDark) {
-            if (isDark) {
-                body.classList.remove('light-theme');
-                body.classList.add('dark-theme');
-            } else {
-                body.classList.remove('dark-theme');
-                body.classList.add('light-theme');
-            }
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        }
-
-        themeToggle.addEventListener('change', (event) => {
-            setTheme(event.target.checked);
-        });
-
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                themeToggle.checked = true;
-                setTheme(true);
-            }
-        });
-
-        function toggleMobileMenu() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('active');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
